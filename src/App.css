@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Fascinate", sans-serif;
+    margin: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    /*width: 100%;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #373737;
+    background: #ffffff;
+}
+
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    width: 100%;
+    background: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.maskGroup {
+    display: flex;
+    margin-left: auto;
+    width: 47.5%;
+}
+#menu{
+    display: flex;
+    width: 52.5%;
+    position: absolute;
+}
+#menu li{
+    text-transform: uppercase;
+    font-family:"Roboto",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 50px;
+    /* or 357% */
+    color: #000000;
+    cursor: pointer;
+}
+#menu li:hover{
+    color: #E05024;
+}
